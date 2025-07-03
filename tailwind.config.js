@@ -5,6 +5,13 @@ module.exports = {
     "./src/**/*.js",       // Scan JS files if needed
   ],
   theme: {
+    screens: {
+      "sm": "360px",
+      "md": "480px",
+      "lg": "769px",
+      "xl": "1025px",
+      "2xl": "1536px"
+    },
     extend: {
       colors: {
         "amenableBlue": "#d7ebf7",
@@ -15,7 +22,10 @@ module.exports = {
         "deepSea": "#001b32",
         "darkBackground": "#111827",
         "secondDarkBackground": "#000b1d" 
-      }
+      },
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+      },
     },
   },
   plugins: [],
