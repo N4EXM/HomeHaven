@@ -556,6 +556,40 @@ video {
   display: none;
 }
 
+.container{
+  width: 100%;
+}
+
+@media (min-width: 360px){
+  .container{
+    max-width: 360px;
+  }
+}
+
+@media (min-width: 480px){
+  .container{
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+
 .fixed{
   position: fixed;
 }
@@ -582,6 +616,10 @@ video {
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.block{
+  display: block;
 }
 
 .flex{
@@ -630,6 +668,10 @@ video {
   flex-direction: column;
 }
 
+.items-start{
+  align-items: flex-start;
+}
+
 .items-center{
   align-items: center;
 }
@@ -646,8 +688,24 @@ video {
   justify-content: space-between;
 }
 
+.gap-1{
+  gap: 0.25rem;
+}
+
 .gap-3{
   gap: 0.75rem;
+}
+
+.gap-4{
+  gap: 1rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
+}
+
+.gap-8{
+  gap: 2rem;
 }
 
 .rounded-full{
@@ -677,9 +735,19 @@ video {
   background-color: rgb(0 65 135 / var(--tw-bg-opacity, 1));
 }
 
+.bg-swimmingPool{
+  --tw-bg-opacity: 1;
+  background-color: rgb(115 195 255 / var(--tw-bg-opacity, 1));
+}
+
 .bg-tearDrop{
   --tw-bg-opacity: 1;
   background-color: rgb(0 104 239 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .p-1{
@@ -745,12 +813,21 @@ video {
   line-height: 1rem;
 }
 
+.text-xxs{
+  font-size: 0.625rem;
+}
+
 .font-medium{
   font-weight: 500;
 }
 
 .font-semibold{
   font-weight: 600;
+}
+
+.text-blueBerry{
+  --tw-text-opacity: 1;
+  color: rgb(0 40 84 / var(--tw-text-opacity, 1));
 }
 
 .text-blueHour{
@@ -809,6 +886,22 @@ video {
     width: 3rem;
   }
 
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:flex-col{
+    flex-direction: column;
+  }
+
+  .md\:justify-center{
+    justify-content: center;
+  }
+
+  .md\:justify-between{
+    justify-content: space-between;
+  }
+
   .md\:p-3{
     padding: 0.75rem;
   }
@@ -822,8 +915,47 @@ video {
     padding-right: 1.25rem;
   }
 
+  .md\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .md\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:px-7{
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
   .md\:pr-28{
     padding-right: 7rem;
+  }
+
+  .md\:pl-20{
+    padding-left: 5rem;
+  }
+
+  .md\:pl-10{
+    padding-left: 2.5rem;
+  }
+
+  .md\:pr-20{
+    padding-right: 5rem;
+  }
+
+  .md\:pr-16{
+    padding-right: 4rem;
+  }
+
+  .md\:pr-14{
+    padding-right: 3.5rem;
+  }
+
+  .md\:pr-12{
+    padding-right: 3rem;
   }
 
   .md\:text-3xl{
@@ -850,6 +982,11 @@ video {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .md\:text-xs{
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
 
 @media (min-width: 768px){
@@ -859,6 +996,10 @@ video {
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:flex-col{
+    flex-direction: column;
   }
 
   .lg\:items-center{
@@ -911,6 +1052,26 @@ video {
     height: 1.25rem;
   }
 
+  .xl\:size-9{
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .xl\:size-8{
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .xl\:size-10{
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .xl\:size-12{
+    width: 3rem;
+    height: 3rem;
+  }
+
   .xl\:h-14{
     height: 3.5rem;
   }
@@ -919,12 +1080,20 @@ video {
     width: 3.5rem;
   }
 
-  .xl\:gap-5{
-    gap: 1.25rem;
+  .xl\:gap-12{
+    gap: 3rem;
+  }
+
+  .xl\:gap-16{
+    gap: 4rem;
   }
 
   .xl\:p-5{
     padding: 1.25rem;
+  }
+
+  .xl\:p-3{
+    padding: 0.75rem;
   }
 
   .xl\:px-20{
@@ -942,12 +1111,30 @@ video {
     padding-bottom: 4rem;
   }
 
+  .xl\:py-28{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
   .xl\:pr-20{
     padding-right: 5rem;
   }
 
-  .xl\:pr-80{
-    padding-right: 20rem;
+  .xl\:pr-28{
+    padding-right: 7rem;
+  }
+
+  .xl\:pr-5{
+    padding-right: 1.25rem;
+  }
+
+  .xl\:pr-16{
+    padding-right: 4rem;
+  }
+
+  .xl\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .xl\:text-5xl{
@@ -970,35 +1157,16 @@ video {
     line-height: 1.75rem;
   }
 
-  .xl\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .xl\:text-white{
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity, 1));
   }
 }
 
 @media (min-width: 1280px){
-  .\32xl\:p-28{
-    padding: 7rem;
-  }
-
   .\32xl\:px-28{
     padding-left: 7rem;
     padding-right: 7rem;
-  }
-
-  .\32xl\:py-12{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  .\32xl\:py-16{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  .\32xl\:py-20{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
   }
 
   .\32xl\:py-24{
@@ -1006,56 +1174,18 @@ video {
     padding-bottom: 6rem;
   }
 
-  .\32xl\:pr-96{
-    padding-right: 24rem;
+  .\32xl\:py-28{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
   }
 
-  .\32xl\:pr-16{
-    padding-right: 4rem;
-  }
-
-  .\32xl\:pr-20{
-    padding-right: 5rem;
-  }
-
-  .\32xl\:pr-56{
-    padding-right: 14rem;
+  .\32xl\:py-32{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .\32xl\:pr-64{
     padding-right: 16rem;
-  }
-
-  .\32xl\:pr-72{
-    padding-right: 18rem;
-  }
-
-  .\32xl\:pr-80{
-    padding-right: 20rem;
-  }
-
-  .\32xl\:pr-32{
-    padding-right: 8rem;
-  }
-
-  .\32xl\:pr-44{
-    padding-right: 11rem;
-  }
-
-  .\32xl\:pr-60{
-    padding-right: 15rem;
-  }
-
-  .\32xl\:pr-52{
-    padding-right: 13rem;
-  }
-
-  .\32xl\:pr-36{
-    padding-right: 9rem;
-  }
-
-  .\32xl\:pr-\[26rem\]{
-    padding-right: 26rem;
   }
 
   .\32xl\:pr-\[30rem\]{
@@ -1069,6 +1199,16 @@ video {
 
   .\32xl\:text-xl{
     font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .\32xl\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .\32xl\:text-lg{
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }
@@ -1097,6 +1237,11 @@ video {
     background-color: rgb(0 104 239 / var(--tw-bg-opacity, 1));
   }
 
+  .dark\:bg-secondDarkBackground{
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 11 29 / var(--tw-bg-opacity, 1));
+  }
+
   .dark\:text-amenableBlue{
     --tw-text-opacity: 1;
     color: rgb(215 235 247 / var(--tw-text-opacity, 1));
@@ -1110,5 +1255,17 @@ video {
   .dark\:text-tearDrop{
     --tw-text-opacity: 1;
     color: rgb(0 104 239 / var(--tw-text-opacity, 1));
+  }
+
+  .dark\:text-white{
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  }
+
+  @media (min-width: 1024px){
+    .dark\:xl\:text-white{
+      --tw-text-opacity: 1;
+      color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+    }
   }
 }
