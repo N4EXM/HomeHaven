@@ -29,7 +29,7 @@ module.exports = {
       fontSize: {
         "xxxs": "0.5rem",
         "xxs": "0.625rem"
-      }
+      },  
     },
   },
   plugins: [],
