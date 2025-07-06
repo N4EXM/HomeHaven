@@ -666,6 +666,10 @@ video {
   gap: 2.5rem;
 }
 
+.gap-14{
+  gap: 3.5rem;
+}
+
 .gap-2{
   gap: 0.5rem;
 }
@@ -680,18 +684,6 @@ video {
 
 .gap-8{
   gap: 2rem;
-}
-
-.gap-16{
-  gap: 4rem;
-}
-
-.gap-20{
-  gap: 5rem;
-}
-
-.gap-14{
-  gap: 3.5rem;
 }
 
 .rounded{
@@ -743,6 +735,11 @@ video {
   background-color: rgb(0 104 239 / var(--tw-bg-opacity, 1));
 }
 
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
 .p-1{
   padding: 0.25rem;
 }
@@ -786,6 +783,11 @@ video {
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-7{
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 
 .pb-5{
@@ -836,12 +838,21 @@ video {
   font-size: 0.625rem;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-medium{
   font-weight: 500;
 }
 
 .font-semibold{
   font-weight: 600;
+}
+
+.font-bold{
+  font-weight: 700;
 }
 
 .text-amenableBlue{
@@ -907,24 +918,8 @@ video {
     height: 3rem;
   }
 
-  .md\:min-h-12{
-    min-height: 3rem;
-  }
-
   .md\:w-12{
     width: 3rem;
-  }
-
-  .md\:w-14{
-    width: 3.5rem;
-  }
-
-  .md\:w-16{
-    width: 4rem;
-  }
-
-  .md\:min-w-16{
-    min-width: 4rem;
   }
 
   .md\:flex-row{
@@ -953,21 +948,6 @@ video {
     padding-right: 1.75rem;
   }
 
-  .md\:px-14{
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-  }
-
-  .md\:py-16{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  .md\:py-14{
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
-  }
-
   .md\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -986,6 +966,10 @@ video {
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:w-1\/3{
+    width: 33.333333%;
   }
 
   .lg\:flex-row{
@@ -1008,30 +992,16 @@ video {
     gap: 1.5rem;
   }
 
+  .lg\:border-none{
+    border-style: none;
+  }
+
   .lg\:p-20{
     padding: 5rem;
   }
 
-  .lg\:p-12{
-    padding: 3rem;
-  }
-
-  .lg\:p-5{
-    padding: 1.25rem;
-  }
-
   .lg\:p-7{
     padding: 1.75rem;
-  }
-
-  .lg\:px-12{
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  .lg\:py-16{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
   }
 
   .lg\:px-20{
@@ -1039,33 +1009,32 @@ video {
     padding-right: 5rem;
   }
 
-  .lg\:px-10{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+  .lg\:py-12{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
-  .lg\:px-16{
-    padding-left: 4rem;
-    padding-right: 4rem;
+  .lg\:py-28{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .lg\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .lg\:pt-20{
     padding-top: 5rem;
   }
 
+  .lg\:pt-3{
+    padding-top: 0.75rem;
+  }
+
   .lg\:text-5xl{
     font-size: 3rem;
     line-height: 1;
-  }
-
-  .lg\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .lg\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 
   .lg\:text-lg{
@@ -1091,13 +1060,9 @@ video {
     width: 3.5rem;
   }
 
-  .xl\:p-5{
-    padding: 1.25rem;
-  }
-
-  .xl\:px-20{
-    padding-left: 5rem;
-    padding-right: 5rem;
+  .xl\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .xl\:text-2xl{
@@ -1110,14 +1075,14 @@ video {
     line-height: 1;
   }
 
-  .xl\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .xl\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .xl\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -1132,25 +1097,6 @@ video {
 
   .\32xl\:gap-8{
     gap: 2rem;
-  }
-
-  .\32xl\:border-none{
-    border-style: none;
-  }
-
-  .\32xl\:px-28{
-    padding-left: 7rem;
-    padding-right: 7rem;
-  }
-
-  .\32xl\:py-0{
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
-  .\32xl\:py-20{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
   }
 
   .\32xl\:pb-0{
@@ -1192,6 +1138,11 @@ video {
     background-color: rgb(0 104 239 / var(--tw-bg-opacity, 1));
   }
 
+  .dark\:bg-secondDarkBackground{
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 11 29 / var(--tw-bg-opacity, 1));
+  }
+
   .dark\:text-amenableBlue{
     --tw-text-opacity: 1;
     color: rgb(215 235 247 / var(--tw-text-opacity, 1));
@@ -1205,5 +1156,10 @@ video {
   .dark\:text-tearDrop{
     --tw-text-opacity: 1;
     color: rgb(0 104 239 / var(--tw-text-opacity, 1));
+  }
+
+  .dark\:text-white{
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity, 1));
   }
 }
