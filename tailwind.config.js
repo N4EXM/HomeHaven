@@ -14,7 +14,8 @@ module.exports = {
         "blueBerry": "#002854",
         "deepSea": "#001b32",
         "darkBackground": "#111827",
-        "secondDarkBackground": "#000b1d" 
+        "secondDarkBackground": "#000b1d",
+        "darkText": "#dbeafe"
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
