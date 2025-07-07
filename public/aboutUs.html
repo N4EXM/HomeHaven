@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./assets/logo2dark.svg" type="image/x-icon">
+    <link href="/dist/output.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Haven</title>
+</head>
+<body
+    class="relative flex flex-col w-full h-full min-h-screen pt-14 lg:pt-20 bg-amenableBlue dark:bg-darkBackground font-poppins"
+>
+    <!-- navbar -->
+    <nav 
+        class="fixed top-0 left-0 z-50 flex items-center justify-between w-full p-3 px-5 h-fit text-deepSea dark:text-amenableBlue bg-amenableBlue lg:p-5 dark:bg-darkBackground lg:px-20 md:p-7"
+    >
+    
+        <a 
+            href="./home.html"
+            class="flex items-center justify-start gap-3 lg:gap-5"
+        >
+            <img src="./assets/logo2.svg" alt="Home Haven Logo" class="hidden w-10 h-10 md:w-12 md:h-12 dark:block">
+            <img src="./assets/logo2dark.svg" alt="Home Haven Logo Dark" class="block w-10 h-10 dark:hidden md:w-12 md:h-12 xl:w-14 xl:h-14 ">
+            <span class="text-lg font-semibold md:text-xl xl:text-2xl">Home Haven</span>
+        </a>
+
+        <button 
+            class="p-1 rounded-full lg:hidden"
+            id="navToggle"
+        >
+            <svg class="md:size-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M7 12h13m-10 6h10" />
+            </svg>
+        </button>
+
+        <!-- desktop view for links -->
+        <div
+            class="hidden font-medium lg:flex lg:items-center lg:gap-6 "
+        >
+            <a href="./aboutUs.html">About Us</a>
+            <a href="./getInvolved.html">Get Involved</a>
+            <a
+                class="p-2 px-4 text-sm text-white rounded-md bg-blueHour dark:bg-tearDrop"
+                href="./contactUs.html"
+            >
+             Contact Us
+            </a>
+        </div>
+
+    </nav>
+    
+    <!-- nav dropdown menu -->
+    <ul
+        id="navDropdown" 
+        class="fixed left-0 z-50 flex-col hidden w-full gap-3 p-3 px-4 font-medium shadow-lg dark:shadow-slate-950 md:px-5 md:p-4 bg-amenableBlue pb-7 h-fit top-16 md:top-20 dark:bg-darkBackground text-deepSea dark:text-amenableBlue lg:hidden"
+    >
+        <li class="w-full">
+            <a 
+                href="./aboutUs.html"
+                class="flex items-center justify-between gap-3 p-2 md:text-lg"
+            >
+                About Us
+                <svg class="md:size-6" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                    <path fill="currentColor" fill-rule="evenodd" d="M2 8a.75.75 0 0 1 .75-.75h8.69L8.22 4.03a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H2.75A.75.75 0 0 1 2 8" clip-rule="evenodd" />
+                </svg>
+            </a>
+            <hr class="w-full border border-blueHour dark:border-tearDrop">
+        </li>
+        <li class="w-full">
+            <a 
+                href="./getInvolved.html"
+                class="flex items-center justify-between gap-3 p-2 md:text-lg"
+            >
+                Get Involved
+                <svg class="md:size-6" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                    <path fill="currentColor" fill-rule="evenodd" d="M2 8a.75.75 0 0 1 .75-.75h8.69L8.22 4.03a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75  0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H2.75A.75.75 0 0 1 2 8" clip-rule="evenodd" />
+                </svg>
+            </a>
+            <hr class="w-full border border-blueHour dark:border-tearDrop">
+        </li>
+        <li class="w-full">
+            <a 
+                href="./contactUs.html"
+                class="flex items-center justify-between gap-3 p-2 md:text-lg"
+            >
+                Contact Us
+                <svg class="md:size-6" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                    <path fill="currentColor" fill-rule="evenodd" d="M2 8a.75.75 0 0 1 .75-.75h8.69L8.22 4.03a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75  0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H2.75A.75.75 0 0 1 2 8" clip-rule="evenodd" />
+                </svg>
+            </a>
+            <hr class="w-full border border-blueHour dark:border-tearDrop">
+        </li>
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>
