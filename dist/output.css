@@ -838,21 +838,12 @@ video {
   font-size: 0.625rem;
 }
 
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .font-medium{
   font-weight: 500;
 }
 
 .font-semibold{
   font-weight: 600;
-}
-
-.font-bold{
-  font-weight: 700;
 }
 
 .text-amenableBlue{
@@ -1133,14 +1124,14 @@ video {
     background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
   }
 
-  .dark\:bg-tearDrop{
-    --tw-bg-opacity: 1;
-    background-color: rgb(0 104 239 / var(--tw-bg-opacity, 1));
-  }
-
   .dark\:bg-secondDarkBackground{
     --tw-bg-opacity: 1;
     background-color: rgb(0 11 29 / var(--tw-bg-opacity, 1));
+  }
+
+  .dark\:bg-tearDrop{
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 104 239 / var(--tw-bg-opacity, 1));
   }
 
   .dark\:text-amenableBlue{
