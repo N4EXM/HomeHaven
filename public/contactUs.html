@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./assets/logo2dark.svg" type="image/x-icon">
+    <title>Home Haven</title>
     <link rel="stylesheet" href="../dist/output.css">
 </head>
 <body
-    class="relative flex flex-col w-full h-full min-h-screen pt-14 bg-amenableBlue dark:bg-darkBackground font-poppins"
+    class="relative flex flex-col w-full h-full min-h-screen pt-14 md:pt-24 bg-amenableBlue dark:bg-darkBackground font-poppins"
 >
 
     <!-- navbar -->
@@ -93,185 +94,189 @@
     </ul>
 
     <div
-        class="flex flex-col lg:borderlg:flex-row"
+        class="lg:p-20 lg:w-full lg:h-full lg:pt-3 "
     >
-        <!-- informational section -->
-        <section
-            class="flex flex-col gap-8 p-5 py-10 text-darkText bg-blueBerry"
+        <div
+            class="flex flex-col w-full rounded-md lg:border border-slate-600 lg:flex-row lg:grid lg:grid-cols-5"
         >
-            <div
-                class="flex flex-col gap-3 "
+            <!-- informational section -->
+            <section
+                class="flex flex-col col-span-2 gap-8 p-5 py-10 text-darkText bg-blueBerry lg:rounded-l-md lg:p-5"
             >
-                <h1
-                    class="text-3xl font-semibold"
-                >
-                    Contact <span class="text-swimmingPool">Us</span>
-                </h1>
-                <p
-                    class="text-sm"
-                >
-                    Have questions, ideas, or want to get involved? We’d love to hear from you! Whether you’re searching for housing, a landlord looking to list a property, or a partner interested in collaboration, our team is here to help.
-                </p>
-            </div>
-            <ul
-                class="flex flex-col items-start justify-start gap-5 text-sm text-darkText"
-            >
-                <li class="flex flex-row items-start justify-start gap-3">
-                    <i>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                            <path fill="currentColor" d="M21.963 18.855a2.74 2.74 0 0 1-.898 1.47a5.36 5.36 0 0 1-3.848 1.602h-.358a11.4 11.4 0 0 1-4.287-1.082c-.326-.153-.643-.296-1.02-.47A19.8 19.8 0 0 1 7.253 17.1a18.6 18.6 0 0 1-4.012-5.451A11.9 11.9 0 0 1 2.15 8.106a6.5 6.5 0 0 1 .418-3.808a7 7 0 0 1 1.174-1.48a2.3 2.3 0 0 1 1.634-.745a2.54 2.54 0 0 1 1.725.95c.47.52 1.02 1.02 1.52 1.55l.644.634c.38.333.615.802.653 1.306c.001.464-.17.911-.48 1.256a9 9 0 0 1-.622.694l-.215.225a1.15 1.15 0 0 0-.286.418c-.052.154-.07.318-.05.48c.164.444.421.848.755 1.184c.52.704 1.02 1.317 1.582 2.042a13.3 13.3 0 0 0 3.4 2.807c.123.1.27.167.428.194c.14.021.281 0 .408-.062a3.5 3.5 0 0 0 1.021-.826c.36-.444.882-.726 1.45-.787a2.04 2.04 0 0 1 1.46.623q.35.302.663.643l.306.327l.317.306c.193.194.377.368.56.572q.5.43.93.929c.293.374.441.842.418 1.317" />
-                        </svg>
-                    </i>
-                    <p 
-                        class="text-sm"
-                    >
-                        +44 0384 847523
-                    </p>
-                </li>
-                <li class="flex flex-row items-start justify-start gap-3">
-                    <i>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                            <path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m-.4 4.25l-6.54 4.09c-.65.41-1.47.41-2.12 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44" />
-                        </svg>
-                    </i>
-                    <p 
-                        class="text-sm"
-                    >
-                        info@HomeHaven.org
-                    </p>
-                </li>
-                <li class="flex flex-row items-start justify-start gap-3">
-                    <i>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                            <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5" />
-                        </svg>
-                    </i>
-                    <p 
-                        class="text-sm"
-                    >
-                        Office 1 119 Little Horton Lane Bradford BD5 0HT
-                    </p>
-                </li>
-
-            </ul>
-        </section>
-
-        <!-- contact form -->
-        <section
-            class="flex flex-col w-full gap-4 p-5 bg-white dark:bg-darkBackground dark:text-darkText"
-        >
-
-            <!-- name field -->
-            <div
-                class="flex flex-col items-start justify-start gap-2"
-            >
-                <p
-                    class="text-sm"
-                >
-                    Name:
-                </p>
                 <div
-                    class="relative w-full"
+                    class="flex flex-col gap-3 "
                 >
-                    <input 
-                        type="text" 
-                        id="name"
-                        placeholder="Enter your name"
-                        class="w-full p-2 text-sm border rounded-md outline-none bg-amenableBlue pl-9 border-slate-600 placeholder:text-deepSea/40 dark:bg-secondDarkBackground dark:placeholder:text-white/30"
+                    <h1
+                        class="text-3xl font-semibold"
                     >
-                    <i
-                        class="absolute transform -translate-x-1/2 -translate-y-1/2 text-blueHour top-1/2 left-5 dark:text-tearDrop"
+                        Contact <span class="text-swimmingPool">Us</span>
+                    </h1>
+                    <p
+                        class="text-sm"
                     >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                            <path fill="currentColor" d="M12 12.75c3.942 0 7.987 2.563 8.249 7.712a.75.75 0 0 1-.71.787c-2.08.106-11.713.171-15.077 0a.75.75 0 0 1-.711-.787C4.013 15.314 8.058 12.75 12 12.75m0-9a3.75 3.75 0 1 0 0 7.5a3.75 3.75 0 0 0 0-7.5" />
-                        </svg>
-                    </i>
+                        Have questions, ideas, or want to get involved? We’d love to hear from you! Whether you’re searching for housing, a landlord looking to list a property, or a partner interested in collaboration, our team is here to help.
+                    </p>
+                </div>
+                <ul
+                    class="flex flex-col items-start justify-start gap-5 text-sm text-darkText"
+                >
+                    <li class="flex flex-row items-start justify-start gap-3">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M21.963 18.855a2.74 2.74 0 0 1-.898 1.47a5.36 5.36 0 0 1-3.848 1.602h-.358a11.4 11.4 0 0 1-4.287-1.082c-.326-.153-.643-.296-1.02-.47A19.8 19.8 0 0 1 7.253 17.1a18.6 18.6 0 0 1-4.012-5.451A11.9 11.9 0 0 1 2.15 8.106a6.5 6.5 0 0 1 .418-3.808a7 7 0 0 1 1.174-1.48a2.3 2.3 0 0 1 1.634-.745a2.54 2.54 0 0 1 1.725.95c.47.52 1.02 1.02 1.52 1.55l.644.634c.38.333.615.802.653 1.306c.001.464-.17.911-.48 1.256a9 9 0 0 1-.622.694l-.215.225a1.15 1.15 0 0 0-.286.418c-.052.154-.07.318-.05.48c.164.444.421.848.755 1.184c.52.704 1.02 1.317 1.582 2.042a13.3 13.3 0 0 0 3.4 2.807c.123.1.27.167.428.194c.14.021.281 0 .408-.062a3.5 3.5 0 0 0 1.021-.826c.36-.444.882-.726 1.45-.787a2.04 2.04 0 0 1 1.46.623q.35.302.663.643l.306.327l.317.306c.193.194.377.368.56.572q.5.43.93.929c.293.374.441.842.418 1.317" />
+                            </svg>
+                        </i>
+                        <p 
+                            class="text-sm"
+                        >
+                            +44 0384 847523
+                        </p>
+                    </li>
+                    <li class="flex flex-row items-start justify-start gap-3">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m-.4 4.25l-6.54 4.09c-.65.41-1.47.41-2.12 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44" />
+                            </svg>
+                        </i>
+                        <p 
+                            class="text-sm"
+                        >
+                            info@HomeHaven.org
+                        </p>
+                    </li>
+                    <li class="flex flex-row items-start justify-start gap-3">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5" />
+                            </svg>
+                        </i>
+                        <p 
+                            class="text-sm"
+                        >
+                            Office 1 119 Little Horton Lane Bradford BD5 0HT
+                        </p>
+                    </li>
+
+                </ul>
+            </section>
+
+            <!-- contact form -->
+            <section
+                class="flex flex-col w-full gap-4 p-5 bg-white dark:bg-darkBackground dark:text-darkText lg:col-span-3 lg:rounded-r-md"
+            >
+
+                <!-- name field -->
+                <div
+                    class="flex flex-col items-start justify-start gap-2"
+                >
+                    <p
+                        class="text-sm"
+                    >
+                        Name:
+                    </p>
+                    <div
+                        class="relative w-full"
+                    >
+                        <input 
+                            type="text" 
+                            id="name"
+                            placeholder="Enter your name"
+                            class="w-full p-2 text-sm border rounded-md outline-none bg-amenableBlue pl-9 border-slate-300 dark:border-slate-600 placeholder:text-deepSea/40 dark:bg-secondDarkBackground dark:placeholder:text-white/30 xl:text-xs"
+                        >
+                        <i
+                            class="absolute transform -translate-x-1/2 -translate-y-1/2 text-blueHour top-1/2 left-5 dark:text-tearDrop"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12 12.75c3.942 0 7.987 2.563 8.249 7.712a.75.75 0 0 1-.71.787c-2.08.106-11.713.171-15.077 0a.75.75 0 0 1-.711-.787C4.013 15.314 8.058 12.75 12 12.75m0-9a3.75 3.75 0 1 0 0 7.5a3.75 3.75 0 0 0 0-7.5" />
+                            </svg>
+                        </i>
+                    </div>
+                    
                 </div>
                 
-            </div>
-            
-            <!-- email field -->
-            <div
-                class="flex flex-col items-start justify-start gap-2"
-            >
-                <p
-                    class="text-sm"
-                >
-                    Email:
-                </p>
+                <!-- email field -->
                 <div
-                    class="relative w-full"
+                    class="flex flex-col items-start justify-start gap-2"
                 >
-                    <input 
-                        type="text" 
-                        id="email"
-                        placeholder="Enter your email"
-                        class="w-full p-2 text-sm border rounded-md outline-none bg-amenableBlue pl-9 border-slate-600 placeholder:text-deepSea/40 dark:bg-secondDarkBackground dark:placeholder:text-white/30"
+                    <p
+                        class="text-sm"
                     >
-                    <i
-                        class="absolute transform -translate-x-1/2 -translate-y-1/2 text-blueHour top-1/2 left-5 dark:text-tearDrop"
+                        Email:
+                    </p>
+                    <div
+                        class="relative w-full"
                     >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                            <path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m-.4 4.25l-6.54 4.09c-.65.41-1.47.41-2.12 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44" />
-                        </svg>
-                    </i>
+                        <input 
+                            type="text" 
+                            id="email"
+                            placeholder="Enter your email"
+                            class="w-full p-2 text-sm border rounded-md outline-none bg-amenableBlue pl-9 border-slate-300 dark:border-slate-600 placeholder:text-deepSea/40 dark:bg-secondDarkBackground dark:placeholder:text-white/30 xl:text-xs"
+                        >
+                        <i
+                            class="absolute transform -translate-x-1/2 -translate-y-1/2 text-blueHour top-1/2 left-5 dark:text-tearDrop"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m-.4 4.25l-6.54 4.09c-.65.41-1.47.41-2.12 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44" />
+                            </svg>
+                        </i>
+                    </div>
+                    
+                    
                 </div>
-                
-                
-            </div>
 
-            <!-- contact number field -->
-            <div
-                class="flex flex-col items-start justify-start gap-2"
-            >
-                <p
-                    class="text-sm"
-                >
-                    Contact Number:
-                </p>
+                <!-- contact number field -->
                 <div
-                    class="relative w-full"
+                    class="flex flex-col items-start justify-start gap-2"
                 >
-                    <input 
+                    <p
+                        class="text-sm"
+                    >
+                        Contact Number:
+                    </p>
+                    <div
+                        class="relative w-full"
+                    >
+                        <input 
+                            type="text" 
+                            id="contactNumber"
+                            placeholder="Enter your contact number"
+                            class="w-full p-2 text-sm border rounded-md outline-none bg-amenableBlue pl-9 border-slate-300 dark:border-slate-600 placeholder:text-deepSea/40 dark:bg-secondDarkBackground dark:placeholder:text-white/30 xl:text-xs"
+                        >
+                        <i
+                            class="absolute transform -translate-x-1/2 -translate-y-1/2 text-blueHour top-1/2 left-5 dark:text-tearDrop"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M21.963 18.855a2.74 2.74 0 0 1-.898 1.47a5.36 5.36 0 0 1-3.848 1.602h-.358a11.4 11.4 0 0 1-4.287-1.082c-.326-.153-.643-.296-1.02-.47A19.8 19.8 0 0 1 7.253 17.1a18.6 18.6 0 0 1-4.012-5.451A11.9 11.9 0 0 1 2.15 8.106a6.5 6.5 0 0 1 .418-3.808a7 7 0 0 1 1.174-1.48a2.3 2.3 0 0 1 1.634-.745a2.54 2.54 0 0 1 1.725.95c.47.52 1.02 1.02 1.52 1.55l.644.634c.38.333.615.802.653 1.306c.001.464-.17.911-.48 1.256a9 9 0 0 1-.622.694l-.215.225a1.15 1.15 0 0 0-.286.418c-.052.154-.07.318-.05.48c.164.444.421.848.755 1.184c.52.704 1.02 1.317 1.582 2.042a13.3 13.3 0 0 0 3.4 2.807c.123.1.27.167.428.194c.14.021.281 0 .408-.062a3.5 3.5 0 0 0 1.021-.826c.36-.444.882-.726 1.45-.787a2.04 2.04 0 0 1 1.46.623q.35.302.663.643l.306.327l.317.306c.193.194.377.368.56.572q.5.43.93.929c.293.374.441.842.418 1.317" />
+                            </svg>  
+                        </i>
+                    </div>    
+                </div>
+
+                <!-- subject field -->
+                <div
+                    class="flex flex-col items-start justify-start gap-2"
+                >
+                    <p
+                        class="text-sm"
+                    >
+                        Subject:
+                    </p>
+                    <textarea
                         type="text" 
-                        id="contactNumber"
-                        placeholder="Enter your contact number"
-                        class="w-full p-2 text-sm border rounded-md outline-none bg-amenableBlue pl-9 border-slate-600 placeholder:text-deepSea/40 dark:bg-secondDarkBackground dark:placeholder:text-white/30"
-                    >
-                    <i
-                        class="absolute transform -translate-x-1/2 -translate-y-1/2 text-blueHour top-1/2 left-5 dark:text-tearDrop"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                            <path fill="currentColor" d="M21.963 18.855a2.74 2.74 0 0 1-.898 1.47a5.36 5.36 0 0 1-3.848 1.602h-.358a11.4 11.4 0 0 1-4.287-1.082c-.326-.153-.643-.296-1.02-.47A19.8 19.8 0 0 1 7.253 17.1a18.6 18.6 0 0 1-4.012-5.451A11.9 11.9 0 0 1 2.15 8.106a6.5 6.5 0 0 1 .418-3.808a7 7 0 0 1 1.174-1.48a2.3 2.3 0 0 1 1.634-.745a2.54 2.54 0 0 1 1.725.95c.47.52 1.02 1.02 1.52 1.55l.644.634c.38.333.615.802.653 1.306c.001.464-.17.911-.48 1.256a9 9 0 0 1-.622.694l-.215.225a1.15 1.15 0 0 0-.286.418c-.052.154-.07.318-.05.48c.164.444.421.848.755 1.184c.52.704 1.02 1.317 1.582 2.042a13.3 13.3 0 0 0 3.4 2.807c.123.1.27.167.428.194c.14.021.281 0 .408-.062a3.5 3.5 0 0 0 1.021-.826c.36-.444.882-.726 1.45-.787a2.04 2.04 0 0 1 1.46.623q.35.302.663.643l.306.327l.317.306c.193.194.377.368.56.572q.5.43.93.929c.293.374.441.842.418 1.317" />
-                        </svg>  
-                    </i>
-                </div>    
-            </div>
+                        id="subject"
+                        placeholder="Enter the subject"
+                        class="w-full h-40 p-2 text-sm border rounded-md outline-none resize-none lg:h-32 bg-amenableBlue border-slate-300 dark:border-slate-600 placeholder:text-deepSea/40 dark:bg-secondDarkBackground dark:placeholder:text-white/30 xl:text-xs"
+                    ></textarea>    
+                </div>
 
-            <!-- subject field -->
-            <div
-                class="flex flex-col items-start justify-start gap-2"
-            >
-                <p
-                    class="text-sm"
+                <button
+                    class="p-2 text-sm font-medium rounded-md bg-tearDrop text-darkText"
                 >
-                    Subject:
-                </p>
-                <textarea
-                    type="text" 
-                    id="subject"
-                    placeholder="Enter the subject"
-                    class="w-full h-40 p-2 pl-3 text-sm border rounded-md outline-none bg-amenableBlue border-slate-600 placeholder:text-deepSea/40 dark:bg-secondDarkBackground dark:placeholder:text-white/30"
-                ></textarea>    
-            </div>
+                    Submit
+                </button>
 
-            <button
-                class="p-2 rounded-md bg-tearDrop"
-            >
-                Submit
-            </button>
-
-        </section>
+            </section>
+        </div>
     </div>
 
     <footer
@@ -399,6 +404,6 @@
         </div>
 
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
