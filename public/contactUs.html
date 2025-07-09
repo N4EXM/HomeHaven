@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body
+    class="relative flex flex-col w-full h-full min-h-screen pt-14 bg-amenableBlue dark:bg-darkBackground font-poppins"
+>
+
+    <!-- navbar -->
+    <nav 
+        class="fixed top-0 left-0 z-50 flex items-center justify-between w-full p-3 px-5 h-fit text-deepSea dark:text-amenableBlue bg-amenableBlue lg:p-5 dark:bg-darkBackground lg:px-20 md:p-7"
+    >
+    
+        <a 
+            href="./home.html"
+            class="flex items-center justify-start gap-3 lg:gap-5"
+        >
+            <img src="./assets/logo2.svg" alt="Home Haven Logo" class="hidden w-10 h-10 md:w-12 md:h-12 dark:block">
+            <img src="./assets/logo2dark.svg" alt="Home Haven Logo Dark" class="block w-10 h-10 dark:hidden md:w-12 md:h-12 xl:w-14 xl:h-14 ">
+            <span class="text-lg font-semibold md:text-xl xl:text-2xl">Home Haven</span>
+        </a>
+
+        <button 
+            class="p-1 rounded-full lg:hidden"
+            id="navToggle"
+        >
+            <svg class="md:size-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M7 12h13m-10 6h10" />
+            </svg>
+        </button>
+
+        <!-- desktop view for links -->
+        <div
+            class="hidden font-medium lg:flex lg:items-center lg:gap-6 "
+        >
+            <a href="./aboutUs.html">About Us</a>
+            <a href="./getInvolved.html">Get Involved</a>
+            <a
+                class="p-2 px-4 text-sm text-white rounded-md bg-blueHour dark:bg-tearDrop"
+                href="./contactUs.html"
+            >
+             Contact Us
+            </a>
+        </div>
+
+    </nav>
+    
+    <!-- nav dropdown menu -->
+    <ul
+        id="navDropdown" 
+        class="fixed left-0 z-50 flex-col hidden w-full gap-3 p-3 px-4 font-medium shadow-lg dark:shadow-slate-950 md:px-5 md:p-4 bg-amenableBlue pb-7 h-fit top-16 md:top-20 dark:bg-darkBackground text-deepSea dark:text-amenableBlue lg:hidden"
+    >
+        <li class="w-full">
+            <a 
+                href="./aboutUs.html"
+                class="flex items-center justify-between gap-3 p-2 md:text-lg"
+            >
+                About Us
+                <svg class="md:size-6" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                    <path fill="currentColor" fill-rule="evenodd" d="M2 8a.75.75 0 0 1 .75-.75h8.69L8.22 4.03a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H2.75A.75.75 0 0 1 2 8" clip-rule="evenodd" />
+                </svg>
+            </a>
+            <hr class="w-full border border-blueHour dark:border-tearDrop">
+        </li>
+        <li class="w-full">
+            <a 
+                href="./getInvolved.html"
+                class="flex items-center justify-between gap-3 p-2 md:text-lg"
+            >
+                Get Involved
+                <svg class="md:size-6" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                    <path fill="currentColor" fill-rule="evenodd" d="M2 8a.75.75 0 0 1 .75-.75h8.69L8.22 4.03a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75  0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H2.75A.75.75 0 0 1 2 8" clip-rule="evenodd" />
+                </svg>
+            </a>
+            <hr class="w-full border border-blueHour dark:border-tearDrop">
+        </li>
+        <li class="w-full">
+            <a 
+                href="./contactUs.html"
+                class="flex items-center justify-between gap-3 p-2 md:text-lg"
+            >
+                Contact Us
+                <svg class="md:size-6" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                    <path fill="currentColor" fill-rule="evenodd" d="M2 8a.75.75 0 0 1 .75-.75h8.69L8.22 4.03a.75.75 0 0 1 1.06-1.06l4.5 4.5a.75.75  0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H2.75A.75.75 0 0 1 2 8" clip-rule="evenodd" />
+                </svg>
+            </a>
+            <hr class="w-full border border-blueHour dark:border-tearDrop">
+        </li>
+    </ul>
+
+    <div
+        class="flex flex-col lg:borderlg:flex-row"
+    >
+        <!-- informational section -->
+        <section
+            class="flex flex-col gap-8 p-5 py-10 text-darkText bg-blueBerry"
+        >
+            <div
+                class="flex flex-col gap-3 "
+            >
+                <h1
+                    class="text-3xl font-semibold"
+                >
+                    Contact <span class="text-swimmingPool">Us</span>
+                </h1>
+                <p
+                    class="text-sm"
+                >
+                    Have questions, ideas, or want to get involved? We’d love to hear from you! Whether you’re searching for housing, a landlord looking to list a property, or a partner interested in collaboration, our team is here to help.
+                </p>
+            </div>
+            <ul
+                class="flex flex-col items-start justify-start gap-5 text-sm text-darkText"
+            >
+                <li class="flex flex-row items-start justify-start gap-3">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M21.963 18.855a2.74 2.74 0 0 1-.898 1.47a5.36 5.36 0 0 1-3.848 1.602h-.358a11.4 11.4 0 0 1-4.287-1.082c-.326-.153-.643-.296-1.02-.47A19.8 19.8 0 0 1 7.253 17.1a18.6 18.6 0 0 1-4.012-5.451A11.9 11.9 0 0 1 2.15 8.106a6.5 6.5 0 0 1 .418-3.808a7 7 0 0 1 1.174-1.48a2.3 2.3 0 0 1 1.634-.745a2.54 2.54 0 0 1 1.725.95c.47.52 1.02 1.02 1.52 1.55l.644.634c.38.333.615.802.653 1.306c.001.464-.17.911-.48 1.256a9 9 0 0 1-.622.694l-.215.225a1.15 1.15 0 0 0-.286.418c-.052.154-.07.318-.05.48c.164.444.421.848.755 1.184c.52.704 1.02 1.317 1.582 2.042a13.3 13.3 0 0 0 3.4 2.807c.123.1.27.167.428.194c.14.021.281 0 .408-.062a3.5 3.5 0 0 0 1.021-.826c.36-.444.882-.726 1.45-.787a2.04 2.04 0 0 1 1.46.623q.35.302.663.643l.306.327l.317.306c.193.194.377.368.56.572q.5.43.93.929c.293.374.441.842.418 1.317" />
+                        </svg>
+                    </i>
+                    <p 
+                        class="text-sm"
+                    >
+                        +44 0384 847523
+                    </p>
+                </li>
+                <li class="flex flex-row items-start justify-start gap-3">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m-.4 4.25l-6.54 4.09c-.65.41-1.47.41-2.12 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44" />
+                        </svg>
+                    </i>
+                    <p 
+                        class="text-sm"
+                    >
+                        info@HomeHaven.org
+                    </p>
+                </li>
+                <li class="flex flex-row items-start justify-start gap-3">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5" />
+                        </svg>
+                    </i>
+                    <p 
+                        class="text-sm"
+                    >
+                        Office 1 119 Little Horton Lane Bradford BD5 0HT
+                    </p>
+                </li>
+
+            </ul>
+        </section>
+
+        <!-- contact form -->
+        <section
+            class="flex flex-col w-full gap-4 p-5 bg-white dark:bg-darkBackground dark:text-darkText"
+        >
+
+            <!-- name field -->
+            <div
+                class="flex flex-col items-start justify-start gap-2"
+            >
+                <p
+                    class="text-sm"
+                >
+                    Name:
+                </p>
+                <div
+                    class="relative w-full"
+                >
+                    <input 
+                        type="text" 
+                        id="name"
+                        placeholder="Enter your name"
+                        class="w-full p-2 text-sm border rounded-md outline-none bg-amenableBlue pl-9 border-slate-600 placeholder:text-deepSea/40 dark:bg-secondDarkBackground dark:placeholder:text-white/30"
+                    >
+                    <i
+                        class="absolute transform -translate-x-1/2 -translate-y-1/2 text-blueHour top-1/2 left-5 dark:text-tearDrop"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M12 12.75c3.942 0 7.987 2.563 8.249 7.712a.75.75 0 0 1-.71.787c-2.08.106-11.713.171-15.077 0a.75.75 0 0 1-.711-.787C4.013 15.314 8.058 12.75 12 12.75m0-9a3.75 3.75 0 1 0 0 7.5a3.75 3.75 0 0 0 0-7.5" />
+                        </svg>
+                    </i>
+                </div>
+                
+            </div>
+            
+            <!-- email field -->
+            <div
+                class="flex flex-col items-start justify-start gap-2"
+            >
+                <p
+                    class="text-sm"
+                >
+                    Email:
+                </p>
+                <div
+                    class="relative w-full"
+                >
+                    <input 
+                        type="text" 
+                        id="email"
+                        placeholder="Enter your email"
+                        class="w-full p-2 text-sm border rounded-md outline-none bg-amenableBlue pl-9 border-slate-600 placeholder:text-deepSea/40 dark:bg-secondDarkBackground dark:placeholder:text-white/30"
+                    >
+                    <i
+                        class="absolute transform -translate-x-1/2 -translate-y-1/2 text-blueHour top-1/2 left-5 dark:text-tearDrop"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m-.4 4.25l-6.54 4.09c-.65.41-1.47.41-2.12 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44" />
+                        </svg>
+                    </i>
+                </div>
+                
+                
+            </div>
+
+            <!-- contact number field -->
+            <div
+                class="flex flex-col items-start justify-start gap-2"
+            >
+                <p
+                    class="text-sm"
+                >
+                    Contact Number:
+                </p>
+                <div
+                    class="relative w-full"
+                >
+                    <input 
+                        type="text" 
+                        id="contactNumber"
+                        placeholder="Enter your contact number"
+                        class="w-full p-2 text-sm border rounded-md outline-none bg-amenableBlue pl-9 border-slate-600 placeholder:text-deepSea/40 dark:bg-secondDarkBackground dark:placeholder:text-white/30"
+                    >
+                    <i
+                        class="absolute transform -translate-x-1/2 -translate-y-1/2 text-blueHour top-1/2 left-5 dark:text-tearDrop"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M21.963 18.855a2.74 2.74 0 0 1-.898 1.47a5.36 5.36 0 0 1-3.848 1.602h-.358a11.4 11.4 0 0 1-4.287-1.082c-.326-.153-.643-.296-1.02-.47A19.8 19.8 0 0 1 7.253 17.1a18.6 18.6 0 0 1-4.012-5.451A11.9 11.9 0 0 1 2.15 8.106a6.5 6.5 0 0 1 .418-3.808a7 7 0 0 1 1.174-1.48a2.3 2.3 0 0 1 1.634-.745a2.54 2.54 0 0 1 1.725.95c.47.52 1.02 1.02 1.52 1.55l.644.634c.38.333.615.802.653 1.306c.001.464-.17.911-.48 1.256a9 9 0 0 1-.622.694l-.215.225a1.15 1.15 0 0 0-.286.418c-.052.154-.07.318-.05.48c.164.444.421.848.755 1.184c.52.704 1.02 1.317 1.582 2.042a13.3 13.3 0 0 0 3.4 2.807c.123.1.27.167.428.194c.14.021.281 0 .408-.062a3.5 3.5 0 0 0 1.021-.826c.36-.444.882-.726 1.45-.787a2.04 2.04 0 0 1 1.46.623q.35.302.663.643l.306.327l.317.306c.193.194.377.368.56.572q.5.43.93.929c.293.374.441.842.418 1.317" />
+                        </svg>  
+                    </i>
+                </div>    
+            </div>
+
+            <!-- subject field -->
+            <div
+                class="flex flex-col items-start justify-start gap-2"
+            >
+                <p
+                    class="text-sm"
+                >
+                    Subject:
+                </p>
+                <textarea
+                    type="text" 
+                    id="subject"
+                    placeholder="Enter the subject"
+                    class="w-full h-40 p-2 pl-3 text-sm border rounded-md outline-none bg-amenableBlue border-slate-600 placeholder:text-deepSea/40 dark:bg-secondDarkBackground dark:placeholder:text-white/30"
+                ></textarea>    
+            </div>
+
+            <button
+                class="p-2 rounded-md bg-tearDrop"
+            >
+                Submit
+            </button>
+
+        </section>
+    </div>
+
+    <footer
+        class="p-6 bg-deepSea md:p-10 lg:flex lg:flex-row lg:justify-between lg:p-20 lg:py-12"
+    >
+
+        <div
+            class="flex flex-col items-start justify-start gap-4 border-b-[2px] border-white/20 pb-5 lg:border-none 2xl:gap-8 2xl:pb-0 "
+        >
+            <div
+                class="flex flex-row items-center justify-start gap-3 2xl:gap-5"
+            >
+                <img src="./assets/logo2.svg" alt="Home Haven Logo" class="w-10 h-10 xl:w-12 xl:h-12">
+                <h1
+                    class="font-medium text-amenableBlue 2xl:text-xl"
+                >
+                    Home Haven
+                </h1>
+                
+            </div>
+            <ul
+                class="flex flex-col items-start justify-start gap-4 pl-0.5 text-sm 2xl:text-lg text-amenableBlue"
+            >
+                <li>
+                    <a 
+                        href="./home.html"
+                    >
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        href="./aboutUs.html"
+                    >
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        href="./getInvolved.html"
+                    >
+                        Get Involved
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        href="./contactUs.html"
+                    >
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div
+            class="flex flex-col items-start justify-start gap-4 border-b-[2px] border-white/20 py-5 lg:border-none lg:py-3 md:gap-6"
+        >
+            <h1
+                class="font-medium text-amenableBlue "
+            >
+                Contact Us
+            </h1>
+            <ul
+                class="flex flex-col items-start justify-start gap-4 pl-0.5 text-sm text-amenableBlue"
+            >
+                <li
+                    class="flex flex-row items-center justify-start gap-2"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" d="M12.735 20.191a15 15 0 0 1-.92-.447a19 19 0 0 1-4.1-3.12A18 18 0 0 1 3.88 11.42a11.3 11.3 0 0 1-1.022-3.325a5.93 5.93 0 0 1 .37-3.465c.289-.47.637-.9 1.035-1.279a1.8 1.8 0 0 1 1.278-.601c.505.076.962.34 1.278.742c.69.767 1.43 1.457 2.159 2.186c.287.246.466.595.498.972c-.012.317-.134.62-.345.857c-.242.307-.536.588-.817.882a1.54 1.54 0 0 0-.46 1.279a3.7 3.7 0 0 0 .881 1.457c.486.665.971 1.28 1.52 1.931a13.6 13.6 0 0 0 3.463 2.865a1.28 1.28 0 0 0 1.278.153a4 4 0 0 0 1.137-.946c.275-.335.669-.55 1.099-.601c.383.02.744.184 1.01.46c.344.294.638.64.958.959c.319.32.575.55.843.844q.482.425.907.908c.22.284.324.64.294.997a2.1 2.1 0 0 1-.703 1.087a4.78 4.78 0 0 1-3.756 1.458a10.7 10.7 0 0 1-4.05-1.049Z"/></svg>
+                    <p
+                    
+                    >
+                        +44 0384 847523
+                    </p>
+                </li>               
+                <li
+                    class="flex flex-row items-center justify-start gap-2"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><rect width="18.5" height="15.5" x="2.75" y="4.25" rx="3"/><path d="m2.75 8l8.415 3.866a2 2 0 0 0 1.67 0L21.25 8"/></g></svg>
+                    <p
+                    
+                    >
+                        info@HomeHaven.org
+                    </p>
+                </li>       
+                <li
+                    class="flex flex-row items-start justify-start gap-2"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3.5a6 6 0 0 0-6 6c0 1.414.802 2.947 1.943 4.384c1.124 1.416 2.489 2.629 3.425 3.389a.99.99 0 0 0 1.264 0c.936-.76 2.301-1.973 3.425-3.39C17.2 12.448 18 10.915 18 9.5a6 6 0 0 0-6-6m-7.5 6a7.5 7.5 0 1 1 15 0c0 1.932-1.064 3.8-2.268 5.316c-1.22 1.537-2.678 2.829-3.655 3.622c-.926.75-2.228.75-3.154 0c-.977-.793-2.435-2.085-3.655-3.622C5.564 13.301 4.5 11.432 4.5 9.5M12 8a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3M9 9.5a3 3 0 1 1 6 0a3 3 0 0 1-6 0m8.682 6.346c-.364.433-.74.842-1.114 1.224q.535.15.99.33c.696.273 1.207.58 1.532.884c.325.302.41.544.41.716s-.085.414-.41.716c-.325.303-.836.61-1.531.884c-1.386.546-3.35.9-5.559.9s-4.173-.354-5.559-.9c-.695-.274-1.206-.581-1.532-.884c-.324-.302-.409-.544-.409-.716s.085-.414.41-.716c.325-.303.836-.61 1.531-.884q.457-.18.99-.33c-.373-.382-.75-.791-1.113-1.224q-.219.077-.427.158c-.798.314-1.494.707-2.004 1.182C3.377 17.662 3 18.274 3 19s.376 1.338.887 1.814c.51.474 1.206.867 2.004 1.182C7.492 22.626 9.652 23 12 23s4.508-.374 6.108-1.004c.799-.315 1.495-.708 2.005-1.182c.51-.476.887-1.088.887-1.814s-.376-1.338-.887-1.814c-.51-.475-1.206-.868-2.005-1.182q-.207-.082-.426-.158"/></svg>
+                    <p
+                    
+                    >
+                        Office 1 119 Little Horton Lane Bradford BD5 0HT
+                    </p>
+                </li>   
+            </ul>
+
+        </div>
+
+        <div
+            class="flex flex-col gap-10 pt-5 text-amenableBlue lg:w-1/3 lg:pt-3"
+        >
+
+            <div
+                class="flex flex-col gap-3 "
+            >
+                <h1
+                    class="font-medium"
+                >
+                    About Us
+                </h1>
+                <p
+                    class="text-xs 2xl:w-96"
+                >
+                    Solace Housing empowers autistic individuals and people with disabilities to find safe, accessible, and supportive housing. Through personalized matching, verified listings, and dedicated advocacy, we’re creating homes where everyone can thrive.
+                </p>
+            </div>
+            <p
+                class="text-xxs"
+            >
+                Copyright @2025 all rights reservsed
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
